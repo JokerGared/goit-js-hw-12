@@ -130,6 +130,7 @@ form > button:focus {
   flex-wrap: wrap;
   align-items: center;
   gap: 24px;
+  width: 100%;
 }
 
 .gallery-item {
