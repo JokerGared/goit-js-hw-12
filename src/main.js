@@ -29,6 +29,7 @@ function scrollAuto() {
 refs.form.addEventListener('submit', async e => {
   e.preventDefault();
   refs.loadMoreBtn.classList.remove('is-pending');
+  refs.loadMoreBtn.textContent = 'Load more';
   page = 1;
   userText = e.target.elements.query.value.trim();
   if (userText === '') {

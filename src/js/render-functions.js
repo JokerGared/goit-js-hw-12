@@ -16,7 +16,6 @@ export function renderImages(images) {
   refs.gallery.insertAdjacentHTML('beforeend', markup);
   lightBox.refresh();
 }
-
 function imageTemplate({
   webformatURL,
   largeImageURL,
