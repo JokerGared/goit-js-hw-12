@@ -13,7 +13,7 @@ const lightBox = new SimpleLightbox('.gallery a', {
 
 export function renderImages(images) {
   const markup = imagesTemplate(images);
-  refs.gallery.innerHTML = markup;
+  refs.gallery.insertAdjacentHTML('beforeend', markup);
   lightBox.refresh();
 }
 

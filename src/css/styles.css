@@ -101,7 +101,7 @@
   border-color: #4e75ff;
 }
 
-form > button {
+.submit {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -119,9 +119,17 @@ form > button {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-form > button:hover,
-form > button:focus {
+.submit:hover,
+.submit:focus {
   background-color: #6c8cff;
+}
+
+.submit.load-more {
+  width: auto;
+  display: none;
+}
+.submit.load-more.is-pending {
+  display: block;
 }
 /* ====================Gallery==================== */
 
@@ -131,6 +139,7 @@ form > button:focus {
   align-items: center;
   gap: 24px;
   width: 100%;
+  margin-bottom: 32px;
 }
 
 .gallery-item {
